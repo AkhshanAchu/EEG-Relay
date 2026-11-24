@@ -24,3 +24,15 @@ for chunk in stream_eeg(chunk_seconds=1):
     process(chunk['eeg_uV'])
 ```
 
+## Live viewer
+
+```
+pip install -r requirements.txt
+live/run_live.sh        # Linux
+live\run_live.bat       # Windows
+```
+
+Pick "Mac relay", enter the Mac's IP and port 9000, Connect. Record saves to `live/recordings/`.
+
+Note: The visualizer is 100% claude written i have no clue what it does. It was built for testing if the waves match. Thank you
+
